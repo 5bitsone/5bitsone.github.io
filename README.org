@@ -1,0 +1,6 @@
+#+TITLE: 5bits.one
+#+AUTHOR: Vinicius Moraes
+#+EMAIL: vinicius.moraes@eternodevir.com
+#+OPTIONS: num:nil
+
+This repository contains the source files for the main website.
