@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5bits.one</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="5bitsone.svg">
+    <link rel="icon" type="image/x-icon" href="5bitsone.ico">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            font-family: 'Courier New', monospace;
-	    background-color: #f2f2f2;
-            color: #222222;
-        }
-
-	svg {
-                stroke: #222222;
-            }
-
-        .landing-text {
-            text-align: center;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #222222;
-                color: #f2f2f2;
-            }
-
-            svg {
-                stroke: #f2f2f2;
-            }
-        }
+      :root  {
+	  --bg-color: #f2f2f2;
+	  --fg-color: #222222;
+      }
+      body {
+	  margin: 0;
+	  padding: 0;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  height: 100vh;
+	  font-family: 'Courier New', monospace;
+	  background-color: var(--bg-color);
+	  color: var(--fg-color);
+      }
+      .landing-text {
+	  text-align: center;
+      }
+      @media (prefers-color-scheme: dark) {
+	  body {
+	      background-color: var(--fg-color);
+	      color: var(--bg-color);
+	  }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="landing-text">
-        <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140">
-            <path stroke-width="122" stroke-dasharray="2,38" d="m9,70h122M70,9v122" />
-            <path stroke-width="33" stroke-linecap="round" d="m70,30h0m40,40h0m-80,40v0m40,0h0m40,0h0" />
-        </svg>
-        <p>5bits.one</p>
+      <img src = "5bitsone.svg" alt="5bits.one logo" style="pointer-events:none;user-select:none;"/>
+      <p>5bits.one</p>
     </div>
-</body>
+  </body>
 </html>
