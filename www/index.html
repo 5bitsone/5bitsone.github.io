@@ -7,35 +7,49 @@
     <link rel="icon" type="image/x-icon" href="5bitsone.ico">
     <style>
       :root  {
-	  --bg-color: #f2f2f2;
-	  --fg-color: #222222;
+          --bg-color: #f2f2f2;
+          --fg-color: #222222;
+          --font-family-monospace: 'Courier New', monospace;
       }
       body {
-	  margin: 0;
-	  padding: 0;
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  height: 100vh;
-	  font-family: 'Courier New', monospace;
-	  background-color: var(--bg-color);
-	  color: var(--fg-color);
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          font-family: var(--font-family-monospace);
+          background-color: var(--bg-color);
+          color: var(--fg-color);
       }
-      .landing-text {
-	  text-align: center;
+      .landing-container {
+          text-align: center;
+      }
+      .ascii-logo {
+          font-size: 1rem;
+          line-height: 1.2;
+      }
+      .margin-0 {
+          margin: 0;
       }
       @media (prefers-color-scheme: dark) {
-	  body {
-	      background-color: var(--fg-color);
-	      color: var(--bg-color);
-	  }
+          body {
+              background-color: var(--fg-color);
+              color: var(--bg-color);
+          }
       }
     </style>
   </head>
   <body>
-    <div class="landing-text">
-      <img src = "5bitsone.svg" alt="5bits.one logo" style="pointer-events:none;user-select:none;"/>
-      <p>5bits.one</p>
-    </div>
+    <main class="landing-container" role="main">
+      <pre class="ascii-logo margin-0" aria-label="Binary pattern: 010 001 111">
+┌───────┐
+│ 0 1 0 │
+│ 0 0 1 │
+│ 1 1 1 │
+└───────┘
+      </pre>
+      <p class="margin-0">5bits.one</p>
+    </main>
   </body>
 </html>
