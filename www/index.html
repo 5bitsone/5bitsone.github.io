@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5bits.one</title>
-    <link rel="icon" type="image/x-icon" href="favicon-light-mode.ico">
-    <link rel="icon" type="image/x-icon" href="favicon-dark-mode.ico" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" href="5bitsone-icon.svg">
     <style>
       :root  {
           --bg-color: #f2f2f2;
@@ -26,10 +25,9 @@
       .landing-container {
           text-align: center;
       }
-      .ascii-logo {
-          font-family: var(--font-family-monospace);
-          font-size: 1rem;
-          line-height: 1.2;
+      .logo {
+          pointer-events: none;
+          user-select:none;
       }
       .margin-0 {
           margin: 0;
@@ -44,14 +42,8 @@
   </head>
   <body>
     <main class="landing-container" role="main">
-      <pre class="ascii-logo margin-0" aria-label="Binary pattern: 010 001 111">
-┌───────┐
-│ 0 1 0 │
-│ 0 0 1 │
-│ 1 1 1 │
-└───────┘
-      </pre>
-      <p class="margin-0">5bits.one</p>
+      <img src="5bitsone.svg" alt="5bits.one logo" class="logo"/>
+      <p>5bits.one</p>
     </main>
   </body>
 </html>

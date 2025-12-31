@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+    version="1.1"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      :root {
+        --svg-color: #000000;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --svg-color: #ffffff;
+        }
+      }
+
+      .border, .block {
+        fill: var(--svg-color);
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g class="border">
+    <rect width="1" height="16" x="0" y="0"/>
+    <rect width="1" height="16" x="15" y="0"/>
+    <rect width="1" height="16" x="15" y="-16" transform="rotate(90)"/>
+    <rect width="1" height="16" x="0" y="-16" transform="rotate(90)"/>
+  </g>
+  <g class="block">
+    <rect width="2" height="2" x="11" y="11"/>
+    <rect width="2" height="2" x="11" y="7"/>
+    <rect width="2" height="2" x="7" y="3"/>
+    <rect width="2" height="2" x="7" y="11"/>
+    <rect width="2" height="2" x="3" y="11"/>
+  </g>
+</svg>
